@@ -1,0 +1,27 @@
+<div *ngIf="estudante">
+  <h2>{{estudante.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{estudante.id}}</div>
+  <div>
+    <label for="estudante-name">Nome do Aluno: </label>
+    <input id="estudante-name" [(ngModel)]="estudante.name" placeholder="name">
+  </div>
+  <div>
+    <label for="estudante-idade">Idade do Aluno: </label>
+    <input id="estudante-idade" [(ngModel)]="estudante.idade" placeholder="idade">
+  </div>
+
+  <div>
+    <label for="estudante-responsalvel">Nome do Responsável: </label>
+    <input id="estudante-responsavel" [(ngModel)]="estudante.responsavel" placeholder="responsavel">
+  </div>
+  <div>
+    <label for="estudante-telefone">Celular: </label>
+    <input id="estudante-telefone" [(ngModel)]="estudante.telefone" placeholder="celular">
+  </div>
+  <div>
+    <label for="estudante-name">Estudante name: </label>
+    <input id="estudante-name" [(ngModel)]="estudante.name" placeholder="Estudante name"/>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>
